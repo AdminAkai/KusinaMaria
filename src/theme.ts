@@ -1,17 +1,24 @@
 interface IColors {
-  orange: '#fb7e14'
-  black: '#000000'
-  darkGray: '#151515'
-  gray: '#292929'
-  white: '#ffffff'
+  blue: '#3E76AB'
+  black: '#122333'
+  gray: '#c5d5e5'
+  white: '#FFFFF0'
 }
 
 interface IThemeColors {
-  primary: string
-  nav: string
-  navOption: string
-  Adminis: string
-  secondary: string
+  background: {
+    primary: string
+    secondary: string
+  }
+  nav: {
+    primary: string
+    secondary: string
+  }
+  logo: string
+  text: {
+    primary: string
+    secondary: string
+  }
 }
 
 interface ITheme {
@@ -19,27 +26,42 @@ interface ITheme {
 }
 
 const colors: IColors = {
-  orange: '#fb7e14',
-  black: '#000000',
-  darkGray: '#151515',
-  gray: '#292929',
-  white: '#ffffff',
+  blue: '#3E76AB',
+  black: '#122333',
+  gray: '#c5d5e5',
+  white: '#FFFFF0',
 }
 
 const lightTheme: IThemeColors = {
-  primary: colors.white,
-  nav: colors.gray,
-  navOption: colors.white,
-  Adminis: colors.orange,
-  secondary: colors.gray,
+  background: {
+    primary: colors.white,
+    secondary: colors.gray,
+  },
+  nav: {
+    primary: colors.black,
+    secondary: colors.white,
+  },
+  logo: colors.blue,
+  text: {
+    primary: colors.black,
+    secondary: colors.white,
+  },
 }
 
 const darkTheme: IThemeColors = {
-  primary: colors.gray,
-  nav: colors.orange,
-  navOption: colors.gray,
-  Adminis: colors.orange,
-  secondary: colors.white,
+  background: {
+    primary: colors.gray,
+    secondary: colors.white,
+  },
+  nav: {
+    primary: colors.white,
+    secondary: colors.gray,
+  },
+  logo: colors.blue,
+  text: {
+    primary: colors.white,
+    secondary: colors.white,
+  },
 }
 
 const theme: ITheme = {

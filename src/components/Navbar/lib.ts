@@ -6,7 +6,11 @@ type AllNavbarOptionsType = Array<{
 
 export const allNavbarOptions: AllNavbarOptionsType = [
   {
-    label: 'About',
-    route: '/about',
+    label: 'Browse Menu',
+    route: '/menu',
+  },
+  {
+    label: 'Order',
+    route: '/order',
   },
 ]

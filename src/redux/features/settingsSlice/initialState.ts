@@ -8,7 +8,7 @@ interface ISettingsInitialState {
 }
 
 const initialState: ISettingsInitialState = {
-  mode: Mode.DARK,
+  mode: Mode.LIGHT,
 }
 
 export default initialState

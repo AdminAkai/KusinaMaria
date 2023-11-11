@@ -7,5 +7,6 @@ export const MainContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: ${({ theme }) => theme.primary};
+  background-color: ${({ theme }) => theme.background.primary};
+  padding: 0 calc(8px + 12.5vw);
 `
