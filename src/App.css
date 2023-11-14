@@ -8,7 +8,7 @@
   --spacing-extra-large: clamp(1.5rem, 3.5vw, 3rem);
   --spacing-page: clamp(3rem, 3.5vw, 6rem);
   --spacing-page-side: clamp(8.25rem, 3.5vw, 16.5rem);
-  --border-radius-normal: clamp(0.75rem, 3.5vw, 1.5rem);
+  --border-radius-normal: 24px;
 }
 
 html {
