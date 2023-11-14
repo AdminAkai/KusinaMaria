@@ -5,5 +5,5 @@ export const LandingPageContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 96px;
+  gap: var(--spacing-page);
 `

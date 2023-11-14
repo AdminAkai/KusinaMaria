@@ -8,7 +8,7 @@ import {
   HeaderButtons,
 } from './styledComponents'
 
-import HeaderBackdrop from '../../assets/images/header_backdrop.jpg'
+import HeaderBackdrop from 'src/assets/images/header_backdrop.jpg'
 import CustomButton from 'src/shared/components/CustomButton'
 
 const LandingHeader: FC = () => (

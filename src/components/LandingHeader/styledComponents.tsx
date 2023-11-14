@@ -1,14 +1,14 @@
 import styled from 'styled-components'
 
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled.section`
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: var(--spacing-medium);
   position: relative;
-  border-radius: 24px;
+  border-radius: var(--border-radius-normal);
   &::after {
     content: '';
     display: block;
@@ -23,12 +23,12 @@ export const HeaderContainer = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    border-radius: 24px;
+    border-radius: var(--border-radius-normal);
   }
 `
 
 export const HeaderBackground = styled.img`
-  border-radius: 24px;
+  border-radius: var(--border-radius-normal);
 `
 
 export const HeaderText = styled.div`
@@ -37,19 +37,19 @@ export const HeaderText = styled.div`
   position: absolute;
   justify-content: space-between;
   align-items: center;
-  gap: 24px;
+  gap: var(--spacing-medium);
   z-index: 2;
 `
 
 export const HeaderTitle = styled.h1`
-  font-size: 64px;
+  font-size: var(--title);
   color: ${({ theme }) => theme.text.secondary};
   text-align: center;
   line-height: normal;
 `
 
 export const HeaderSubtitle = styled.p`
-  font-size: 24px;
+  font-size: var(--subtitle);
   color: ${({ theme }) => theme.text.secondary};
   text-align: center;
 `
@@ -58,5 +58,5 @@ export const HeaderButtons = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 24px;
+  gap: var(--spacing-medium);
 `

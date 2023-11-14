@@ -7,6 +7,8 @@ import FacebookLogo from 'src/assets/icons/facebook.svg?react'
 
 import { allNavbarOptions } from './lib'
 import {
+  FacebookIconContainer,
+  InstagramIconContainer,
   NavbarContainer,
   NavbarOptions,
   NavbarSocials,
@@ -26,8 +28,12 @@ const Navbar: FC = () => {
         ))}
       </NavbarOptions>
       <NavbarSocials>
-        <InstagramLogo width='24px' height='24px' />
-        <FacebookLogo width='24px' height='24px' />
+        <InstagramIconContainer>
+          <InstagramLogo width='1.5rem' height='1.5rem' />
+        </InstagramIconContainer>
+        <FacebookIconContainer>
+          <FacebookLogo width='1.5rem' height='1.5rem' />
+        </FacebookIconContainer>
       </NavbarSocials>
     </NavbarContainer>
   )

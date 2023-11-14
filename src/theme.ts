@@ -1,8 +1,9 @@
 interface IColors {
-  blue: '#3E76AB'
+  blue: '#002366'
   black: '#122333'
   gray: '#c5d5e5'
   white: '#FFFFF0'
+  red: '#DC143C'
 }
 
 interface IThemeColors {
@@ -19,17 +20,21 @@ interface IThemeColors {
     primary: string
     secondary: string
   }
+  button: {
+    primary: string
+  }
 }
 
 interface ITheme {
   [key: string]: IThemeColors
 }
 
-const colors: IColors = {
-  blue: '#3E76AB',
+export const colors: IColors = {
+  blue: '#002366',
   black: '#122333',
   gray: '#c5d5e5',
   white: '#FFFFF0',
+  red: '#DC143C',
 }
 
 const lightTheme: IThemeColors = {
@@ -46,6 +51,9 @@ const lightTheme: IThemeColors = {
     primary: colors.black,
     secondary: colors.white,
   },
+  button: {
+    primary: colors.red,
+  },
 }
 
 const darkTheme: IThemeColors = {
@@ -61,6 +69,9 @@ const darkTheme: IThemeColors = {
   text: {
     primary: colors.white,
     secondary: colors.white,
+  },
+  button: {
+    primary: colors.red,
   },
 }
 
