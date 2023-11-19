@@ -5,7 +5,7 @@ export const ExploreContainer = styled.section`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: var(--spacing-page);
+  gap: var(--spacing-extra-large);
 `
 
 export const ExploreTop = styled.div`
