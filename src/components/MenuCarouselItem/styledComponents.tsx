@@ -11,6 +11,7 @@ export const MenuItemContainer = styled.div`
   border-radius: var(--border-radius-small);
   height: 640px;
   min-width: calc(1280px / 3 - (var(--padding-small) * 5));
+  z-index: -1;
 `
 
 export const MenuItemImage = styled.img`

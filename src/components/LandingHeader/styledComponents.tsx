@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
 export const HeaderContainer = styled.section`
@@ -44,7 +45,7 @@ export const HeaderText = styled.div`
   z-index: 2;
 `
 
-export const HeaderTitle = styled.h1`
+export const HeaderTitle = styled(motion.h1)`
   font-size: var(--title);
   color: ${({ theme }) => theme.text.secondary};
   text-align: center;

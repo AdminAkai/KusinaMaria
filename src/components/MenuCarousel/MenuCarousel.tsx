@@ -1,5 +1,7 @@
 import { FC } from 'react'
 
+import MenuCarouselItem from 'src/components/MenuCarouselItem'
+
 import { menu } from 'src/shared/data/menu'
 
 import { MenuContainer } from './styledComponents'
@@ -8,7 +10,7 @@ const MenuCarousel: FC = () => {
   return (
     <MenuContainer>
       {menu.map((menuItem) => (
-        <MenuCarousel
+        <MenuCarouselItem
           key={`${menuItem.title}-${menuItem.price}`}
           {...menuItem}
         />

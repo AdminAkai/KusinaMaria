@@ -12,6 +12,11 @@
   --spacing-page-side: clamp(8.25rem, 3.5vw, 16.5rem); /* 264px */
   --border-radius-small: 16px;
   --border-radius-normal: 24px;
+  --color-blue: '#002366';
+  --color-black: '#122333';
+  --color-gray: '#c5d5e5';
+  --color-white: '#FFFFF0';
+  --color-red: '#DC143C';
 }
 
 html {

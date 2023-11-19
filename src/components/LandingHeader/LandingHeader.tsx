@@ -1,4 +1,9 @@
 import { FC } from 'react'
+
+import HeaderBackdrop from 'src/assets/images/header_backdrop.jpg'
+
+import CustomButton from 'src/shared/components/CustomButton'
+
 import {
   HeaderContainer,
   HeaderBackground,
@@ -8,14 +13,16 @@ import {
   HeaderButtons,
 } from './styledComponents'
 
-import HeaderBackdrop from 'src/assets/images/header_backdrop.jpg'
-import CustomButton from 'src/shared/components/CustomButton'
-
 const LandingHeader: FC = () => (
   <HeaderContainer>
     <HeaderBackground src={HeaderBackdrop} alt='landing-header-background' />
     <HeaderText>
-      <HeaderTitle>
+      <HeaderTitle
+        initial={{ x: -3000 }}
+        animate={{ x: 0 }}
+        transition={{ duration: '2', delay: 0.2 }}
+        whileHover={{ scale: '0.9', opacity: 0.4 }}
+      >
         Enjoy Authentic Homemade
         <br />
         Filipino Food

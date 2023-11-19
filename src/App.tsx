@@ -12,6 +12,7 @@ import theme from './theme'
 
 import './assets/fonts/stylesheet.css'
 
+import GlobalStyle from './globalStyles'
 import './App.css'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
   return (
     <ThemeProvider theme={theme[mode]}>
       <BrowserRouter>
+        <GlobalStyle />
         <Routes>
           <Route path='/' element={<Main />}>
             <Route index element={<Landing />} />
