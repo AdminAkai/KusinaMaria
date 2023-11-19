@@ -8,6 +8,7 @@ export const HeaderContainer = styled.section`
   align-items: center;
   gap: var(--spacing-medium);
   position: relative;
+  width: 100%;
   border-radius: var(--border-radius-normal);
   &::after {
     content: '';
@@ -29,6 +30,8 @@ export const HeaderContainer = styled.section`
 
 export const HeaderBackground = styled.img`
   border-radius: var(--border-radius-normal);
+  height: auto;
+  width: 100%;
 `
 
 export const HeaderText = styled.div`
