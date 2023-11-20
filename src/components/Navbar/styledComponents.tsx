@@ -6,8 +6,10 @@ export const NavbarContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  top: 0;
   background-color: inherit;
   padding: var(--spacing-large) 0;
+  z-index: 2;
 `
 export const NavbarOptions = styled.div`
   display: flex;

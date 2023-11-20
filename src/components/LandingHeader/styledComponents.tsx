@@ -9,7 +9,7 @@ export const HeaderContainer = styled.section`
   align-items: center;
   gap: var(--spacing-medium);
   position: relative;
-  width: 100%;
+  width: calc(100% - 4px);
   border-radius: var(--border-radius-normal);
   &::after {
     content: '';
@@ -24,7 +24,6 @@ export const HeaderContainer = styled.section`
     );
     position: absolute;
     top: 0;
-    left: 0;
     border-radius: var(--border-radius-normal);
   }
 `

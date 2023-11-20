@@ -10,11 +10,14 @@ import {
   ExploreTitle,
   ExploreTop,
 } from './styledComponents'
+import AnimatedText from 'src/shared/components/AnimatedText'
 
 const Explore: FC = () => (
   <ExploreContainer>
     <ExploreTop>
-      <ExploreSubtitle>Explore</ExploreSubtitle>
+      <ExploreSubtitle>
+        <AnimatedText text='Explore' />
+      </ExploreSubtitle>
       <ExploreTitle>Filipino Cuisine</ExploreTitle>
       <MenuCarousel />
     </ExploreTop>
