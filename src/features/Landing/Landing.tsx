@@ -1,7 +1,7 @@
 import { FC } from 'react'
 
-import LandingHeader from 'src/components/LandingHeader'
-import Explore from 'src/components/Explore'
+import LandingHeader from './LandingHeader'
+import Explore from './Explore'
 
 import { LandingPageContainer } from './styledComponents'
 

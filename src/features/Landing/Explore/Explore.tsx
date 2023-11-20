@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 import CustomButton from 'src/shared/components/CustomButton'
 
-import MenuCarousel from 'src/components/MenuCarousel'
+import MenuCarousel from './MenuCarousel'
 
 import {
   ExploreContainer,

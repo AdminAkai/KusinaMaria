@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import MenuCarouselItem from 'src/components/MenuCarouselItem'
+import MenuCarouselItem from '../MenuCarouselItem'
 
 import { menu } from 'src/shared/data/menu'
 
