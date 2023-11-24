@@ -17,7 +17,7 @@ import {
 const Navbar: FC = () => {
   return (
     <NavbarContainer>
-      <CustomLink to='/' logo>
+      <CustomLink to='/' $logo>
         Ting&apos;s Food Mode
       </CustomLink>
       <NavbarOptions>

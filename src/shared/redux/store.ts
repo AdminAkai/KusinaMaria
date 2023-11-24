@@ -12,7 +12,7 @@ import {
 import { combineReducers } from 'redux'
 import storage from 'redux-persist/lib/storage'
 
-import { settingsSlice } from './features'
+import settingsSlice from './settingsSlice'
 import { useDispatch, TypedUseSelectorHook, useSelector } from 'react-redux'
 
 const persistConfig = {

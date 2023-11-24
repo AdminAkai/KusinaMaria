@@ -1,7 +1,6 @@
 import styled from 'styled-components'
-import { motion } from 'framer-motion'
 
-export const MenuContainer = styled(motion.div)`
+export const MenuContainer = styled.div`
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -12,7 +11,15 @@ export const MenuContainer = styled(motion.div)`
   width: 1280px;
   padding: var(--padding-small);
   border-radius: calc(var(--border-radius-small) - 5px);
-  background: linear-gradient(
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  /* mask: linear-gradient(
     90deg,
     rgb(255, 255, 255, 100%) 3%,
     rgb(255, 255, 255, 50%) 10%,
@@ -20,5 +27,5 @@ export const MenuContainer = styled(motion.div)`
     rgb(255, 255, 255, 0%) 85%,
     rgb(255, 255, 255, 50%) 90%,
     rgb(255, 255, 255, 100%) 97%
-  );
+  ); */
 `

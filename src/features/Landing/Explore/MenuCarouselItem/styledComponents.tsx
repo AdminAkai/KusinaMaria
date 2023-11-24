@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
-export const MenuItemContainer = styled.div`
+export const MenuItemContainer = styled(motion.div)`
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
