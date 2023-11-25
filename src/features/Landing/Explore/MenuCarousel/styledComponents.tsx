@@ -19,13 +19,4 @@ export const MenuContainer = styled.div`
     white 80%,
     transparent
   );
-  /* mask: linear-gradient(
-    90deg,
-    rgb(255, 255, 255, 100%) 3%,
-    rgb(255, 255, 255, 50%) 10%,
-    rgb(255, 255, 255, 0%) 15%,
-    rgb(255, 255, 255, 0%) 85%,
-    rgb(255, 255, 255, 50%) 90%,
-    rgb(255, 255, 255, 100%) 97%
-  ); */
 `

@@ -17,13 +17,14 @@ const MenuCarouselItem: FC<MenuCarouselItemProps> = ({
   <MenuItemContainer
     key={`${title}-${price}`}
     initial={{ x: 0 }}
-    animate={{ x: `calc(-100% * ${menu.length})` }}
+    animate={{ x: '-200%' }}
     transition={{
-      duration: 50,
+      duration: 10,
       repeatType: 'loop',
       ease: 'linear',
       loop: Infinity,
     }}
+    exit={{ x: `calc(100% * ${menu.length})` }}
   >
     <MenuItemImage src={imgSrc} alt={title} />
     {title}

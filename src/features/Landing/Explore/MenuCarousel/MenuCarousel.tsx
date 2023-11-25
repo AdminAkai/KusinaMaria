@@ -15,12 +15,6 @@ const MenuCarousel: FC = () => {
           {...menuItem}
         />
       ))}
-      {menu.map((menuItem) => (
-        <MenuCarouselItem
-          key={`${menuItem.title}-${menuItem.price}`}
-          {...menuItem}
-        />
-      ))}
     </MenuContainer>
   )
 }

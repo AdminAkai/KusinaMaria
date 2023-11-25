@@ -2,6 +2,7 @@
 :root {
   --title: clamp(2rem, 3.5vw, 4rem); /* 64px */
   --subtitle: clamp(0.75rem, 3.5vw, 1.5rem); /* 24px */
+  --footer-tagline: clamp(0.5rem, 3.5vw, 1rem); /* 16px */
   --padding-small: 0.25rem; /* 4px */
   --padding-medium: 0.5rem; /* 8px */
   --spacing-small: clamp(0.5rem, 3.5vw, 1rem); /* 16px */
