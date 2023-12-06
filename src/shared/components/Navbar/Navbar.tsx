@@ -2,8 +2,8 @@ import { FC } from 'react'
 
 import CustomLink from 'src/shared/components/CustomLink'
 
-import InstagramLogo from 'src/assets/icons/instagram.svg?react'
-import FacebookLogo from 'src/assets/icons/facebook.svg?react'
+import InstagramIcon from 'src/assets/icons/instagram.svg?react'
+import FacebookIcon from 'src/assets/icons/facebook.svg?react'
 
 import { allNavbarOptions } from './lib'
 import {
@@ -16,7 +16,14 @@ import {
 
 const Navbar: FC = () => {
   return (
-    <NavbarContainer>
+    <NavbarContainer
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{
+        ease: 'easeIn',
+        duration: 1,
+      }}
+    >
       <CustomLink to='/' $logo>
         Ting&apos;s Food Mode
       </CustomLink>
@@ -29,10 +36,10 @@ const Navbar: FC = () => {
       </NavbarOptions>
       <NavbarSocials>
         <InstagramIconContainer>
-          <InstagramLogo width='1.5rem' height='1.5rem' />
+          <InstagramIcon width='1.5rem' height='1.5rem' />
         </InstagramIconContainer>
         <FacebookIconContainer>
-          <FacebookLogo width='1.5rem' height='1.5rem' />
+          <FacebookIcon width='1.5rem' height='1.5rem' />
         </FacebookIconContainer>
       </NavbarSocials>
     </NavbarContainer>

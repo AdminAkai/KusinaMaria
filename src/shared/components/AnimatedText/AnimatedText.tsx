@@ -4,6 +4,7 @@ import { Character, ScreenReader } from './styledComponents'
 
 interface AnimatedTextProps {
   text: string
+  staggerChildren?: number
 }
 
 const defaultAnims: Variants | undefined = {
@@ -17,7 +18,10 @@ const defaultAnims: Variants | undefined = {
   },
 }
 
-const AnimatedText: FC<AnimatedTextProps> = ({ text }) => {
+const AnimatedText: FC<AnimatedTextProps> = ({
+  text,
+  staggerChildren = 0.1,
+}) => {
   const ref = useRef(null)
 
   return (
@@ -27,13 +31,18 @@ const AnimatedText: FC<AnimatedTextProps> = ({ text }) => {
         ref={ref}
         initial='hidden'
         whileInView='visible'
-        transition={{ staggerChildren: 0.1 }}
+        transition={{ staggerChildren }}
         aria-hidden
         viewport={{ once: true }}
       >
-        {text.split('').map((char) => (
-          <Character key={char} variants={defaultAnims}>
-            {char}
+        {text.split(' ').map((word, i) => (
+          <Character key={`${word}-${i}`}>
+            {word.split('').map((char) => (
+              <Character key={char} variants={defaultAnims}>
+                {char}
+              </Character>
+            ))}
+            &nbsp;
           </Character>
         ))}
       </motion.span>

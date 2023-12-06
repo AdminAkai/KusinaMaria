@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
-export const NavbarContainer = styled.nav`
+export const NavbarContainer = styled(motion.nav)`
   position: sticky;
   display: flex;
   justify-content: space-between;

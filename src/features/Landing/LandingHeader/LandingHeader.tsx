@@ -39,8 +39,7 @@ const LandingHeader: FC = () => (
     <HeaderText>
       <HeaderTitle variants={variants}>
         <AnimatedText text='Enjoy Authentic Homemade' />
-        <br />
-        Filipino Food
+        <AnimatedText text='Filipino Food' staggerChildren={0.2} />
       </HeaderTitle>
       <HeaderSubtitle variants={variants}>
         A rich variety of classic filipino dishes for you to choose from,

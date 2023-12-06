@@ -18,7 +18,9 @@ const Explore: FC = () => (
       <ExploreSubtitle>
         <AnimatedText text='Explore' />
       </ExploreSubtitle>
-      <ExploreTitle>Filipino Cuisine</ExploreTitle>
+      <ExploreTitle>
+        <AnimatedText text='Filipino Cuisine' />
+      </ExploreTitle>
       <MenuCarousel />
     </ExploreTop>
     <CustomButton>Browse Menu</CustomButton>
