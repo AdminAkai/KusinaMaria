@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
-export const HeaderContainer = styled.section`
+export const HeaderContainer = styled(motion.section)`
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -51,13 +51,13 @@ export const HeaderTitle = styled(motion.h1)`
   line-height: normal;
 `
 
-export const HeaderSubtitle = styled.p`
+export const HeaderSubtitle = styled(motion.p)`
   font-size: var(--subtitle);
   color: ${({ theme }) => theme.text.secondary};
   text-align: center;
 `
 
-export const HeaderButtons = styled.div`
+export const HeaderButtons = styled(motion.div)`
   display: flex;
   justify-content: space-between;
   align-items: center;

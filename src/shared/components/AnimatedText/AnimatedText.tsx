@@ -1,10 +1,9 @@
-import { Variants, motion, useInView } from 'framer-motion'
+import { Variants, motion } from 'framer-motion'
 import { FC, useRef } from 'react'
 import { Character, ScreenReader } from './styledComponents'
 
 interface AnimatedTextProps {
   text: string
-  once?: boolean
 }
 
 const defaultAnims: Variants | undefined = {
@@ -18,9 +17,8 @@ const defaultAnims: Variants | undefined = {
   },
 }
 
-const AnimatedText: FC<AnimatedTextProps> = ({ text, once }) => {
+const AnimatedText: FC<AnimatedTextProps> = ({ text }) => {
   const ref = useRef(null)
-  const isInView = useInView(ref, { amount: 0.5, once })
 
   return (
     <p>
@@ -28,9 +26,10 @@ const AnimatedText: FC<AnimatedTextProps> = ({ text, once }) => {
       <motion.span
         ref={ref}
         initial='hidden'
-        animate={isInView ? 'visible' : 'hidden'}
+        whileInView='visible'
         transition={{ staggerChildren: 0.1 }}
         aria-hidden
+        viewport={{ once: true }}
       >
         {text.split('').map((char) => (
           <Character key={char} variants={defaultAnims}>

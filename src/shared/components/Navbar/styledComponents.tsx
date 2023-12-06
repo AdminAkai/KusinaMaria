@@ -8,7 +8,7 @@ export const NavbarContainer = styled.nav`
   width: 100%;
   top: 0;
   background-color: inherit;
-  padding: var(--spacing-large) 0;
+  padding: var(--spacing-large) calc(8px + 12.5vw);
   z-index: 3;
 `
 export const NavbarOptions = styled.div`

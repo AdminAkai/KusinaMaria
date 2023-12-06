@@ -8,7 +8,6 @@ export const MainContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   background-color: ${({ theme }) => theme.background.primary};
-  padding: 0 calc(8px + 12.5vw);
   position: relative;
   z-index: -3;
 

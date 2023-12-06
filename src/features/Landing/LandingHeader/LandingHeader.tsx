@@ -12,27 +12,42 @@ import {
   HeaderSubtitle,
   HeaderButtons,
 } from './styledComponents'
+import { Variants } from 'framer-motion'
+import AnimatedText from 'src/shared/components/AnimatedText'
+
+const variants: Variants = {
+  initial: {
+    y: 50,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 2,
+    },
+  },
+}
 
 const LandingHeader: FC = () => (
-  <HeaderContainer>
+  <HeaderContainer
+    transition={{ staggerChildren: 0.5 }}
+    initial='initial'
+    animate='animate'
+  >
     <HeaderBackground src={HeaderBackdrop} alt='landing-header-background' />
     <HeaderText>
-      <HeaderTitle
-        initial={{ x: -3000 }}
-        animate={{ x: 0 }}
-        transition={{ duration: '2', delay: 0.2 }}
-        whileHover={{ scale: '0.9', opacity: 0.4 }}
-      >
-        Enjoy Authentic Homemade
+      <HeaderTitle variants={variants}>
+        <AnimatedText text='Enjoy Authentic Homemade' />
         <br />
         Filipino Food
       </HeaderTitle>
-      <HeaderSubtitle>
+      <HeaderSubtitle variants={variants}>
         A rich variety of classic filipino dishes for you to choose from,
         <br />
         local to the Atlanta area.
       </HeaderSubtitle>
-      <HeaderButtons>
+      <HeaderButtons variants={variants}>
         <CustomButton>Order here!</CustomButton>
         <CustomButton secondary>Browse Menu</CustomButton>
       </HeaderButtons>

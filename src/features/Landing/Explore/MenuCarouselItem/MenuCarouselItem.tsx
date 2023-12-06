@@ -1,6 +1,5 @@
 import { FC } from 'react'
 
-import { menu } from 'src/shared/data/menu'
 import { MenuItemContainer, MenuItemImage } from './styledComponents'
 
 interface MenuCarouselItemProps {
@@ -16,15 +15,9 @@ const MenuCarouselItem: FC<MenuCarouselItemProps> = ({
 }) => (
   <MenuItemContainer
     key={`${title}-${price}`}
-    initial={{ x: 0 }}
-    animate={{ x: '-200%' }}
-    transition={{
-      duration: 10,
-      repeatType: 'loop',
-      ease: 'linear',
-      loop: Infinity,
-    }}
-    exit={{ x: `calc(100% * ${menu.length})` }}
+    initial={{ translateX: 0 }}
+    animate={{ translateX: '-100%' }}
+    transition={{ duration: 10, ease: 'linear', repeat: Infinity }}
   >
     <MenuItemImage src={imgSrc} alt={title} />
     {title}

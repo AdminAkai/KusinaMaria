@@ -6,4 +6,5 @@ export const LandingPageContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: var(--spacing-page);
+  padding: 0 calc(8px + 12.5vw);
 `
