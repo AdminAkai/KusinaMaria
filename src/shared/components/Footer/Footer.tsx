@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import InstagramIcon from 'src/assets/icons/instagram.svg?react'
+// import InstagramIcon from 'src/assets/icons/instagram.svg?react'
 import FacebookIcon from 'src/assets/icons/facebook.svg?react'
 import YoutubeIcon from 'src/assets/icons/youtube.svg?react'
 import EmailIcon from 'src/assets/icons/email.svg?react'
