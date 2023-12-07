@@ -19,11 +19,19 @@ export const FooterLinks = styled.div`
   gap: var(--spacing-large);
 `
 
-export const FooterLink = styled.div`
+export const FooterSocial = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: var(--spacing-large);
+`
+
+export const FooterLink = styled.a`
+  text-decoration: none;
+  color: ${({ theme }) => theme.nav.primary};
+  &:visited {
+    color: ${({ theme }) => theme.nav.primary};
+  }
 `
 
 export const FacebookIconContainer = styled.div`
@@ -39,8 +47,13 @@ export const InstagramIconContainer = styled.div`
 `
 
 export const FooterMapEmbed = styled.iframe`
-  width: 600px;
-  height: 450px;
+  width: 46.875rem;
+  height: 28.125rem;
   border: 0;
-  border-radius: 8px;
+  border-radius: var(--border-radius-normal);
+`
+
+export const FooterInstagramQR = styled.img`
+  width: 15rem;
+  height: 12.5rem;
 `

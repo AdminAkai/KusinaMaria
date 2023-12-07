@@ -62,7 +62,7 @@ const darkTheme: IThemeColors = {
     secondary: colors.white,
   },
   nav: {
-    primary: colors.white,
+    primary: colors.black,
     secondary: colors.gray,
   },
   logo: colors.blue,
