@@ -7,6 +7,7 @@ import { useAppSelector } from 'src/shared/redux/store'
 import Main from 'src/features/Main'
 import Landing from 'src/features/Landing'
 import About from 'src/features/About'
+import Menu from './features/Menu'
 
 import theme from './shared/lib/theme'
 
@@ -26,6 +27,7 @@ function App() {
           <Route path='/' element={<Main />}>
             <Route index element={<Landing />} />
             <Route path='/about' element={<About />} />
+            <Route path='/menu' element={<Menu />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -12,7 +12,7 @@ const CustomLink = styled(Link)<{ $isActive?: boolean; $logo?: boolean }>`
   }
 
   &:hover:after {
-    transform: scaleX(1);
+    transform: ${({ $logo }) => ($logo ? 'scaleX(0)' : 'scaleX(1)')};
   }
 
   &:visited {
