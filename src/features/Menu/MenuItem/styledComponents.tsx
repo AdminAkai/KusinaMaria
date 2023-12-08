@@ -8,7 +8,10 @@ export const MenuItemContainer = styled.div`
   gap: var(--spacing-medium);
 `
 
-export const MenuItemImage = styled.img``
+export const MenuItemImage = styled.img`
+  height: auto;
+  width: 200px;
+`
 
 export const MenuItemDetails = styled.div`
   display: flex;
@@ -17,6 +20,6 @@ export const MenuItemDetails = styled.div`
   align-items: center;
 `
 
-export const MenuItemTitle = styled.h1``
+export const MenuItemTitle = styled.h3``
 
 export const MenuItemDescription = styled.div``

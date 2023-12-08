@@ -22,7 +22,7 @@ export const MenuSection = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
 `
 
@@ -48,5 +48,6 @@ export const MenuSectionItems = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: var(--spacing-large) 0;
   gap: var(--spacing-large);
 `
