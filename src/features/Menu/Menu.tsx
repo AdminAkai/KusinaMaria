@@ -22,7 +22,11 @@ const Menu: FC = (): ReactNode => {
       </MenuTitle>
       {fullMenu.map(({ sectionHeader, menuItems }) => (
         <MenuSection key={sectionHeader}>
-          <MenuSectionHeader>
+          <MenuSectionHeader
+            initial={{ opacity: 0, width: '0%' }}
+            animate={{ opacity: 1, width: '100%' }}
+            transition={{ delay: 0.3, ease: 'easeIn' }}
+          >
             <MenuSectionTitle>{sectionHeader}</MenuSectionTitle>
             <SectionDivider />
           </MenuSectionHeader>

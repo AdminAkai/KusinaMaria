@@ -21,12 +21,14 @@ export const fullMenu: MenuSection[] = [
       {
         title: 'Pancit Shrimp Bihon',
         imgSrc: pancitShrimpBihon,
-        description: '',
+        description:
+          'Pancit Bihon is a popular Filipino rice noodle dish. This is made-up of rice noodles, meat, and vegetables. Shrimp Pancit Bihon is a version that use shrimp, along with the usual vegetables such as carrots, cabbage, and snow peas.',
       },
       {
         title: 'Pancit Malabon',
         imgSrc: pancitMalabonImg,
-        description: '',
+        description:
+          'Pansit Malabon is a flavorful noodle dish that originated in the City of Malabon. This dish resembles the Pancit Palabok but the array of seafood toppings and the traditional tough and thick rice noodles distinguishes this dish.',
       },
     ],
   },
@@ -36,7 +38,8 @@ export const fullMenu: MenuSection[] = [
       {
         title: 'Chicken Adobo',
         imgSrc: chickenAdoboImg,
-        description: '',
+        description:
+          'Chicken Adobo is an authentic Filipino dish and is one of the mostly recognized Filipino foods. Not to be mistaken with Mexican adobo, this dish is uniquely prepared by stewing chicken in vinegar and soy sauce.',
       },
     ],
   },
@@ -46,12 +49,14 @@ export const fullMenu: MenuSection[] = [
       {
         title: 'Beef Caldereta',
         imgSrc: beefCalderetaImg,
-        description: '',
+        description:
+          'Another favorite Filipino dish is the Kaldereta. It is a hearty meat dish using chevon (goat meat), beef, or pork combined with potatoes, carrots, tomato sauce, and liver spread or liver paste.',
       },
       {
         title: 'Oxtail Kare Kare',
         imgSrc: oxtailKareKareImg,
-        description: '',
+        description:
+          'Kare kare is a rich and peanut buttery oxtail and beef stew that is braised for over two hours, includes a cornucopia of tender vegetables, and served with a side of steaming white rice',
       },
     ],
   },

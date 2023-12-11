@@ -26,7 +26,7 @@ export const MenuSection = styled.div`
   width: 100%;
 `
 
-export const MenuSectionHeader = styled.div`
+export const MenuSectionHeader = styled(motion.div)`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,9 +45,9 @@ export const SectionDivider = styled.div`
 `
 
 export const MenuSectionItems = styled.div`
+  padding: var(--spacing-large) 0;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: var(--spacing-large) 0;
-  gap: var(--spacing-large);
 `
