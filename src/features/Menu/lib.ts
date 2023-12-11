@@ -66,7 +66,8 @@ export const fullMenu: MenuSection[] = [
       {
         title: 'Ground Pork Lumpia',
         imgSrc: groundPorkLumpiaImg,
-        description: '',
+        description:
+          'Lumpia or Lumpiang Shanghai is a type of Filipino egg roll. The basic filling is composed of ground pork along with minced onions, carrots, and seasonings such as salt and ground black pepper.',
       },
     ],
   },
@@ -76,12 +77,14 @@ export const fullMenu: MenuSection[] = [
       {
         title: 'Turon',
         imgSrc: turonImg,
-        description: '',
+        description:
+          'Turon, also known as banana lumpia, is filled with sweet fruits like jackfruit, saba banana, sweet potato, or mango.',
       },
       {
         title: 'Puto Ube',
         imgSrc: putoUbeImg,
-        description: '',
+        description:
+          'Puto Ube like most puto is a steamed cake that can either be made with rice flour or just the usual all-purpose flour, it is easy to distinguish compared to most due to its vibrant purple colour coming from its main ingredient called ube or purple yam.',
       },
     ],
   },
