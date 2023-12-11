@@ -2,17 +2,10 @@ import { FC, ReactNode } from 'react'
 
 import AnimatedText from 'src/shared/components/AnimatedText'
 
+import MenuSection from './MenuSection'
+
 import { fullMenu } from './lib'
-import {
-  MenuContainer,
-  MenuSection,
-  MenuSectionHeader,
-  MenuSectionItems,
-  MenuSectionTitle,
-  MenuTitle,
-  SectionDivider,
-} from './styledComponents'
-import MenuItem from './MenuItem'
+import { MenuContainer, MenuTitle } from './styledComponents'
 
 const Menu: FC = (): ReactNode => {
   return (
@@ -21,21 +14,11 @@ const Menu: FC = (): ReactNode => {
         <AnimatedText text='Menu' />
       </MenuTitle>
       {fullMenu.map(({ sectionHeader, menuItems }) => (
-        <MenuSection key={sectionHeader}>
-          <MenuSectionHeader
-            initial={{ opacity: 0, width: '0%' }}
-            animate={{ opacity: 1, width: '100%' }}
-            transition={{ delay: 0.3, ease: 'easeIn' }}
-          >
-            <MenuSectionTitle>{sectionHeader}</MenuSectionTitle>
-            <SectionDivider />
-          </MenuSectionHeader>
-          <MenuSectionItems>
-            {menuItems.map((menuItem) => (
-              <MenuItem key={menuItem.title} {...menuItem} />
-            ))}
-          </MenuSectionItems>
-        </MenuSection>
+        <MenuSection
+          key={sectionHeader}
+          sectionHeader={sectionHeader}
+          menuItems={menuItems}
+        />
       ))}
     </MenuContainer>
   )
