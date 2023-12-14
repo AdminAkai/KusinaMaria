@@ -35,7 +35,13 @@ const LandingHeader: FC = () => (
     initial='initial'
     animate='animate'
   >
-    <HeaderBackground src={HeaderBackdrop} alt='landing-header-background' />
+    <HeaderBackground
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 3, ease: 'easeIn' }}
+      src={HeaderBackdrop}
+      alt='landing-header-background'
+    />
     <HeaderText>
       <HeaderTitle variants={variants}>
         <AnimatedText text='Enjoy Authentic Homemade' />

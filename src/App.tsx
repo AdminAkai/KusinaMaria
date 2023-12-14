@@ -8,6 +8,7 @@ import Main from 'src/features/Main'
 import Landing from 'src/features/Landing'
 import About from 'src/features/About'
 import Menu from './features/Menu'
+import Order from './features/Order'
 
 import theme from './shared/lib/theme'
 
@@ -28,6 +29,7 @@ function App() {
             <Route index element={<Landing />} />
             <Route path='/about' element={<About />} />
             <Route path='/menu' element={<Menu />} />
+            <Route path='/order' element={<Order />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -10,6 +10,7 @@ export const MainContainer = styled.div`
   background-color: ${({ theme }) => theme.background.primary};
   position: relative;
   z-index: -3;
+  transition: background-color 0.5s ease-in;
 
   /* ===== Scrollbar CSS ===== */
   /* Firefox */

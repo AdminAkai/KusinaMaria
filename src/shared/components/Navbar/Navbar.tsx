@@ -5,6 +5,8 @@ import CustomLink from 'src/shared/components/CustomLink'
 import InstagramIcon from 'src/assets/icons/instagram.svg?react'
 import FacebookIcon from 'src/assets/icons/facebook.svg?react'
 
+import IconRenderer from '../IconRenderer'
+
 import { allNavbarOptions } from './lib'
 import {
   FacebookIconContainer,
@@ -35,6 +37,7 @@ const Navbar: FC = () => {
         ))}
       </NavbarOptions>
       <NavbarSocials>
+        <IconRenderer />
         <InstagramIconContainer>
           <InstagramIcon width='1.5rem' height='1.5rem' />
         </InstagramIconContainer>

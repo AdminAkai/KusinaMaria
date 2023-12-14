@@ -28,7 +28,7 @@ export const HeaderContainer = styled(motion.section)`
   }
 `
 
-export const HeaderBackground = styled.img`
+export const HeaderBackground = styled(motion.img)`
   border-radius: var(--border-radius-normal);
   height: auto;
   width: 100%;
